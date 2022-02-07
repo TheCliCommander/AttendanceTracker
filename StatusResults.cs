@@ -11,20 +11,18 @@ using System.Data.SqlClient;
 
 namespace LearningApp1
 {
-    public partial class NSResults : Form
+    public partial class StatusResults : Form
     {
-        public NSResults()
+        public StatusResults()
         {
             InitializeComponent();
         }
-        public static string FName;
-        
-
-        private void NSResults_Load(object sender, EventArgs e)
+        public static string Status;
+        private void StatusResults_Load(object sender, EventArgs e)
         {
-            FName = NameSearch.FName;
+            Status = StatusSearch.Status;
             DataTable dt = new DataTable();
-            string select = $"SELECT * FROM Employees WHERE FullName = '{FName}';";
+            string select = $"SELECT * FROM Employees WHERE Status = '{Status}';";
             SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-OK1MJMB;Initial Catalog=Roster;Integrated Security=True");
             using (SqlDataAdapter da = new SqlDataAdapter(select, conn))
             {
@@ -32,9 +30,7 @@ namespace LearningApp1
             }
             BindingSource bs = new BindingSource();
             bs.DataSource = dt;
-            NSdataGridView1.DataSource = bs;
+            dataGridViewStatus.DataSource = bs;
         }
-
-       
     }
 }

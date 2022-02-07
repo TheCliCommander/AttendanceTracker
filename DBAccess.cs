@@ -14,7 +14,7 @@ namespace LearningApp1
         {
             private static SqlConnection connection = new SqlConnection();
             private static SqlCommand command = new SqlCommand();
-        private static SqlDataReader DbReader;
+            private static SqlDataReader DbReader;
             private static SqlDataAdapter adapter = new SqlDataAdapter();
             public SqlTransaction DbTran;
 

@@ -53,6 +53,7 @@
             // panelSideMenuMS
             // 
             this.panelSideMenuMS.AutoScroll = true;
+            this.panelSideMenuMS.BackColor = System.Drawing.Color.Black;
             this.panelSideMenuMS.Controls.Add(this.panelSearchSubMenu);
             this.panelSideMenuMS.Controls.Add(this.btnSearchByMS);
             this.panelSideMenuMS.Controls.Add(this.btnNewEntryMS);
@@ -65,6 +66,7 @@
             // 
             // panelSearchSubMenu
             // 
+            this.panelSearchSubMenu.BackColor = System.Drawing.Color.Firebrick;
             this.panelSearchSubMenu.Controls.Add(this.btnStatusMS);
             this.panelSearchSubMenu.Controls.Add(this.btnNameMS);
             this.panelSearchSubMenu.Controls.Add(this.btnDateMS);
@@ -76,11 +78,13 @@
             // 
             // btnStatusMS
             // 
+            this.btnStatusMS.BackColor = System.Drawing.Color.Firebrick;
             this.btnStatusMS.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnStatusMS.FlatAppearance.BorderSize = 0;
-            this.btnStatusMS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RosyBrown;
+            this.btnStatusMS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.btnStatusMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatusMS.ForeColor = System.Drawing.Color.MistyRose;
+            this.btnStatusMS.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnStatusMS.ForeColor = System.Drawing.Color.Snow;
             this.btnStatusMS.Location = new System.Drawing.Point(0, 80);
             this.btnStatusMS.Name = "btnStatusMS";
             this.btnStatusMS.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -88,15 +92,18 @@
             this.btnStatusMS.TabIndex = 2;
             this.btnStatusMS.Text = "Status";
             this.btnStatusMS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStatusMS.UseVisualStyleBackColor = true;
+            this.btnStatusMS.UseVisualStyleBackColor = false;
+            this.btnStatusMS.Click += new System.EventHandler(this.btnStatusMS_Click);
             // 
             // btnNameMS
             // 
+            this.btnNameMS.BackColor = System.Drawing.Color.Firebrick;
             this.btnNameMS.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNameMS.FlatAppearance.BorderSize = 0;
-            this.btnNameMS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RosyBrown;
+            this.btnNameMS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.btnNameMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNameMS.ForeColor = System.Drawing.Color.MistyRose;
+            this.btnNameMS.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNameMS.ForeColor = System.Drawing.Color.Snow;
             this.btnNameMS.Location = new System.Drawing.Point(0, 40);
             this.btnNameMS.Name = "btnNameMS";
             this.btnNameMS.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -104,16 +111,18 @@
             this.btnNameMS.TabIndex = 1;
             this.btnNameMS.Text = "Name";
             this.btnNameMS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNameMS.UseVisualStyleBackColor = true;
+            this.btnNameMS.UseVisualStyleBackColor = false;
             this.btnNameMS.Click += new System.EventHandler(this.btnNameMS_Click);
             // 
             // btnDateMS
             // 
+            this.btnDateMS.BackColor = System.Drawing.Color.Firebrick;
             this.btnDateMS.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDateMS.FlatAppearance.BorderSize = 0;
-            this.btnDateMS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RosyBrown;
+            this.btnDateMS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.btnDateMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDateMS.ForeColor = System.Drawing.Color.MistyRose;
+            this.btnDateMS.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDateMS.ForeColor = System.Drawing.Color.Snow;
             this.btnDateMS.Location = new System.Drawing.Point(0, 0);
             this.btnDateMS.Name = "btnDateMS";
             this.btnDateMS.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -121,15 +130,17 @@
             this.btnDateMS.TabIndex = 0;
             this.btnDateMS.Text = "Date";
             this.btnDateMS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDateMS.UseVisualStyleBackColor = true;
+            this.btnDateMS.UseVisualStyleBackColor = false;
             this.btnDateMS.Click += new System.EventHandler(this.btnDateMS_Click);
             // 
             // btnSearchByMS
             // 
+            this.btnSearchByMS.BackColor = System.Drawing.Color.Firebrick;
             this.btnSearchByMS.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSearchByMS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RosyBrown;
+            this.btnSearchByMS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.btnSearchByMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchByMS.ForeColor = System.Drawing.Color.MistyRose;
+            this.btnSearchByMS.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSearchByMS.ForeColor = System.Drawing.Color.Snow;
             this.btnSearchByMS.Location = new System.Drawing.Point(0, 130);
             this.btnSearchByMS.Name = "btnSearchByMS";
             this.btnSearchByMS.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -137,15 +148,17 @@
             this.btnSearchByMS.TabIndex = 4;
             this.btnSearchByMS.Text = "Search By:";
             this.btnSearchByMS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearchByMS.UseVisualStyleBackColor = true;
+            this.btnSearchByMS.UseVisualStyleBackColor = false;
             this.btnSearchByMS.Click += new System.EventHandler(this.btnSearchByMS_Click);
             // 
             // btnNewEntryMS
             // 
+            this.btnNewEntryMS.BackColor = System.Drawing.Color.Firebrick;
             this.btnNewEntryMS.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnNewEntryMS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RosyBrown;
+            this.btnNewEntryMS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.btnNewEntryMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewEntryMS.ForeColor = System.Drawing.Color.MistyRose;
+            this.btnNewEntryMS.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNewEntryMS.ForeColor = System.Drawing.Color.Snow;
             this.btnNewEntryMS.Location = new System.Drawing.Point(0, 90);
             this.btnNewEntryMS.Name = "btnNewEntryMS";
             this.btnNewEntryMS.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -153,7 +166,7 @@
             this.btnNewEntryMS.TabIndex = 5;
             this.btnNewEntryMS.Text = "New Entry";
             this.btnNewEntryMS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNewEntryMS.UseVisualStyleBackColor = true;
+            this.btnNewEntryMS.UseVisualStyleBackColor = false;
             this.btnNewEntryMS.Click += new System.EventHandler(this.btnNewEntryMS_Click);
             // 
             // panel1
@@ -168,16 +181,20 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.ImageLocation = "";
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(194, 88);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // panelCrudBox
             // 
+            this.panelCrudBox.BackColor = System.Drawing.Color.Black;
             this.panelCrudBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelCrudBox.Controls.Add(this.btnPrintMS);
             this.panelCrudBox.Controls.Add(this.btnCloseMS);
@@ -191,11 +208,12 @@
             // btnPrintMS
             // 
             this.btnPrintMS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPrintMS.FlatAppearance.BorderColor = System.Drawing.Color.MistyRose;
+            this.btnPrintMS.FlatAppearance.BorderColor = System.Drawing.Color.Snow;
             this.btnPrintMS.FlatAppearance.BorderSize = 2;
-            this.btnPrintMS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RosyBrown;
+            this.btnPrintMS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.btnPrintMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrintMS.ForeColor = System.Drawing.Color.MistyRose;
+            this.btnPrintMS.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnPrintMS.ForeColor = System.Drawing.Color.Snow;
             this.btnPrintMS.Location = new System.Drawing.Point(13, 31);
             this.btnPrintMS.Name = "btnPrintMS";
             this.btnPrintMS.Size = new System.Drawing.Size(131, 40);
@@ -206,11 +224,12 @@
             // btnCloseMS
             // 
             this.btnCloseMS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCloseMS.FlatAppearance.BorderColor = System.Drawing.Color.MistyRose;
+            this.btnCloseMS.FlatAppearance.BorderColor = System.Drawing.Color.Snow;
             this.btnCloseMS.FlatAppearance.BorderSize = 2;
-            this.btnCloseMS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RosyBrown;
+            this.btnCloseMS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.btnCloseMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCloseMS.ForeColor = System.Drawing.Color.MistyRose;
+            this.btnCloseMS.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCloseMS.ForeColor = System.Drawing.Color.Snow;
             this.btnCloseMS.Location = new System.Drawing.Point(576, 31);
             this.btnCloseMS.Name = "btnCloseMS";
             this.btnCloseMS.Size = new System.Drawing.Size(131, 40);
@@ -222,20 +241,23 @@
             // btnResetMS
             // 
             this.btnResetMS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnResetMS.FlatAppearance.BorderColor = System.Drawing.Color.MistyRose;
+            this.btnResetMS.FlatAppearance.BorderColor = System.Drawing.Color.Snow;
             this.btnResetMS.FlatAppearance.BorderSize = 2;
-            this.btnResetMS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RosyBrown;
+            this.btnResetMS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.btnResetMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnResetMS.ForeColor = System.Drawing.Color.MistyRose;
+            this.btnResetMS.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnResetMS.ForeColor = System.Drawing.Color.Snow;
             this.btnResetMS.Location = new System.Drawing.Point(294, 31);
             this.btnResetMS.Name = "btnResetMS";
             this.btnResetMS.Size = new System.Drawing.Size(131, 40);
             this.btnResetMS.TabIndex = 0;
             this.btnResetMS.Text = "Reset";
             this.btnResetMS.UseVisualStyleBackColor = true;
+            this.btnResetMS.Click += new System.EventHandler(this.btnResetMS_Click);
             // 
             // panelChildFormMS
             // 
+            this.panelChildFormMS.BackColor = System.Drawing.Color.Snow;
             this.panelChildFormMS.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelChildFormMS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildFormMS.ForeColor = System.Drawing.Color.MistyRose;
