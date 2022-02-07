@@ -130,6 +130,16 @@ namespace LearningApp1
                 }
             }
         }
+      
 
+        private void btnRemoveEntry_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new RemoveEntryForm());
+        }
+
+        private void btnMSDisplayAll_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DisplayAll());
+        }
     }
 }
