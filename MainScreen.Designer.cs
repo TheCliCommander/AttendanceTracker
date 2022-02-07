@@ -30,7 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainScreen));
             this.panelSideMenuMS = new System.Windows.Forms.Panel();
+            this.btnRemoveEntry = new System.Windows.Forms.Button();
             this.panelSearchSubMenu = new System.Windows.Forms.Panel();
+            this.btnMSDisplayAll = new System.Windows.Forms.Button();
             this.btnStatusMS = new System.Windows.Forms.Button();
             this.btnNameMS = new System.Windows.Forms.Button();
             this.btnDateMS = new System.Windows.Forms.Button();
@@ -54,6 +56,7 @@
             // 
             this.panelSideMenuMS.AutoScroll = true;
             this.panelSideMenuMS.BackColor = System.Drawing.Color.Black;
+            this.panelSideMenuMS.Controls.Add(this.btnRemoveEntry);
             this.panelSideMenuMS.Controls.Add(this.panelSearchSubMenu);
             this.panelSideMenuMS.Controls.Add(this.btnSearchByMS);
             this.panelSideMenuMS.Controls.Add(this.btnNewEntryMS);
@@ -64,17 +67,55 @@
             this.panelSideMenuMS.Size = new System.Drawing.Size(194, 496);
             this.panelSideMenuMS.TabIndex = 0;
             // 
+            // btnRemoveEntry
+            // 
+            this.btnRemoveEntry.BackColor = System.Drawing.Color.Firebrick;
+            this.btnRemoveEntry.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRemoveEntry.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveEntry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemoveEntry.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRemoveEntry.ForeColor = System.Drawing.Color.Snow;
+            this.btnRemoveEntry.Location = new System.Drawing.Point(0, 337);
+            this.btnRemoveEntry.Name = "btnRemoveEntry";
+            this.btnRemoveEntry.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnRemoveEntry.Size = new System.Drawing.Size(194, 40);
+            this.btnRemoveEntry.TabIndex = 7;
+            this.btnRemoveEntry.Text = "Remove Entry";
+            this.btnRemoveEntry.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRemoveEntry.UseVisualStyleBackColor = false;
+            this.btnRemoveEntry.Click += new System.EventHandler(this.btnRemoveEntry_Click_1);
+            // 
             // panelSearchSubMenu
             // 
             this.panelSearchSubMenu.BackColor = System.Drawing.Color.Firebrick;
+            this.panelSearchSubMenu.Controls.Add(this.btnMSDisplayAll);
             this.panelSearchSubMenu.Controls.Add(this.btnStatusMS);
             this.panelSearchSubMenu.Controls.Add(this.btnNameMS);
             this.panelSearchSubMenu.Controls.Add(this.btnDateMS);
             this.panelSearchSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSearchSubMenu.Location = new System.Drawing.Point(0, 170);
             this.panelSearchSubMenu.Name = "panelSearchSubMenu";
-            this.panelSearchSubMenu.Size = new System.Drawing.Size(194, 139);
+            this.panelSearchSubMenu.Size = new System.Drawing.Size(194, 167);
             this.panelSearchSubMenu.TabIndex = 6;
+            // 
+            // btnMSDisplayAll
+            // 
+            this.btnMSDisplayAll.BackColor = System.Drawing.Color.Firebrick;
+            this.btnMSDisplayAll.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMSDisplayAll.FlatAppearance.BorderSize = 0;
+            this.btnMSDisplayAll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.btnMSDisplayAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMSDisplayAll.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMSDisplayAll.ForeColor = System.Drawing.Color.Snow;
+            this.btnMSDisplayAll.Location = new System.Drawing.Point(0, 120);
+            this.btnMSDisplayAll.Name = "btnMSDisplayAll";
+            this.btnMSDisplayAll.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnMSDisplayAll.Size = new System.Drawing.Size(194, 40);
+            this.btnMSDisplayAll.TabIndex = 3;
+            this.btnMSDisplayAll.Text = "Display All";
+            this.btnMSDisplayAll.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMSDisplayAll.UseVisualStyleBackColor = false;
+            this.btnMSDisplayAll.Click += new System.EventHandler(this.btnMSDisplayAll_Click);
             // 
             // btnStatusMS
             // 
@@ -270,12 +311,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(924, 496);
             this.Controls.Add(this.panelChildFormMS);
             this.Controls.Add(this.panelCrudBox);
             this.Controls.Add(this.panelSideMenuMS);
-            this.ForeColor = System.Drawing.Color.Coral;
+            this.ForeColor = System.Drawing.Color.Snow;
             this.MinimumSize = new System.Drawing.Size(948, 560);
             this.Name = "MainScreen";
             this.Text = "MainScreen";
@@ -305,5 +346,7 @@
         private Panel panelChildFormMS;
         private Panel panelSearchSubMenu;
         private PictureBox pictureBox1;
+        private Button btnRemoveEntry;
+        private Button btnMSDisplayAll;
     }
 }
