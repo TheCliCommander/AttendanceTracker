@@ -22,8 +22,8 @@ namespace LearningApp1
         {
             InitializeComponent();
             PassThru.Events.openChildFormEvent += PassThrough_openChildFormEvent;
-            
-            
+
+
         }
 
         private void PassThrough_openChildFormEvent(object? sender, Form e)
@@ -47,7 +47,7 @@ namespace LearningApp1
         {
             if (subMenu.Visible == false)
             {
-               //hideSubMenu
+                //hideSubMenu
                 subMenu.Visible = true;
             }
             else
@@ -102,5 +102,34 @@ namespace LearningApp1
         {
             openChildForm(new NameSearch());
         }
+
+        private void btnStatusMS_Click(object sender, EventArgs e)
+        {
+            openChildForm(new StatusSearch());
+        }
+
+        private void btnResetMS_Click(object sender, EventArgs e)
+        {
+            if (activeForm != null)
+            {
+                var formName = activeForm.GetType().Name;
+                switch (formName)
+                {
+                    case "NameSearch":
+                        openChildForm(Activator.CreateInstance<NameSearch>());
+                        break;
+                    case "DateSearch":
+                        openChildForm(Activator.CreateInstance<DateSearch>());
+                        break;
+                    case "RecordAttendance":
+                        openChildForm(Activator.CreateInstance<RecordAttendance>());
+                        break;
+                    case "StatusSearch":
+                        openChildForm(Activator.CreateInstance<StatusSearch>());
+                        break;
+                }
+            }
+        }
+
     }
 }

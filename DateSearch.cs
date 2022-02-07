@@ -27,7 +27,7 @@ namespace LearningApp1
 
         public void btnDSSearch_Click(object sender, EventArgs e)
         {
-            DSDate = DSdtPicker.Value.ToString("MMM dd yyyy");
+            DSDate = DSdtPicker.Value.ToString("MMM dd, yyyy");
             DataTable Employees = new DataTable();
             PassThru.Events.openChildForm(new Results()); 
             
