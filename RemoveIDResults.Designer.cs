@@ -1,6 +1,6 @@
 ﻿namespace LearningApp1
 {
-    partial class REConfirm
+    partial class RemoveIDResults
     {
         /// <summary>
         /// Required designer variable.
@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblDateREC = new System.Windows.Forms.Label();
+            this.lblRemIDResults = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lblDateREC
+            // lblRemIDResults
             // 
-            this.lblDateREC.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblDateREC.AutoSize = true;
-            this.lblDateREC.ForeColor = System.Drawing.Color.Snow;
-            this.lblDateREC.Location = new System.Drawing.Point(161, 132);
-            this.lblDateREC.Name = "lblDateREC";
-            this.lblDateREC.Size = new System.Drawing.Size(381, 30);
-            this.lblDateREC.TabIndex = 0;
-            this.lblDateREC.Text = "MMM dd, yyyy FullName Entry Deleted.";
+            this.lblRemIDResults.AutoSize = true;
+            this.lblRemIDResults.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lblRemIDResults.Location = new System.Drawing.Point(113, 132);
+            this.lblRemIDResults.Name = "lblRemIDResults";
+            this.lblRemIDResults.Size = new System.Drawing.Size(478, 38);
+            this.lblRemIDResults.TabIndex = 0;
+            this.lblRemIDResults.Text = "Entry ID {ID} successfully removed!";
             // 
-            // REConfirm
+            // RemoveIDResults
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(706, 334);
-            this.Controls.Add(this.lblDateREC);
-            this.Name = "REConfirm";
-            this.Text = "REConfirm";
-            this.Load += new System.EventHandler(this.REConfirm_Load);
+            this.Controls.Add(this.lblRemIDResults);
+            this.ForeColor = System.Drawing.Color.Snow;
+            this.Name = "RemoveIDResults";
+            this.Text = "RemoveIDResults";
+            this.Load += new System.EventHandler(this.RemoveIDResults_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -59,6 +59,6 @@
 
         #endregion
 
-        private Label lblDateREC;
+        private Label lblRemIDResults;
     }
 }

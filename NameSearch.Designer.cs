@@ -35,6 +35,7 @@
             // 
             // textBoxFullName
             // 
+            this.textBoxFullName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxFullName.Location = new System.Drawing.Point(235, 97);
             this.textBoxFullName.Name = "textBoxFullName";
             this.textBoxFullName.Size = new System.Drawing.Size(329, 35);
@@ -42,6 +43,7 @@
             // 
             // lblFName
             // 
+            this.lblFName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFName.AutoSize = true;
             this.lblFName.BackColor = System.Drawing.Color.Firebrick;
             this.lblFName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -55,6 +57,7 @@
             // 
             // btnNSSearch
             // 
+            this.btnNSSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnNSSearch.BackColor = System.Drawing.Color.Firebrick;
             this.btnNSSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.btnNSSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
