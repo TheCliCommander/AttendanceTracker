@@ -36,9 +36,7 @@
             // 
             // lblOptions
             // 
-            this.lblOptions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblOptions.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblOptions.AutoSize = true;
             this.lblOptions.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblOptions.Location = new System.Drawing.Point(121, 39);
@@ -49,9 +47,7 @@
             // 
             // lblStatus
             // 
-            this.lblStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblStatus.Location = new System.Drawing.Point(121, 129);
@@ -62,9 +58,7 @@
             // 
             // textBoxStatus
             // 
-            this.textBoxStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxStatus.Location = new System.Drawing.Point(206, 129);
             this.textBoxStatus.Name = "textBoxStatus";
             this.textBoxStatus.Size = new System.Drawing.Size(418, 35);
@@ -72,6 +66,7 @@
             // 
             // btnStatSearch
             // 
+            this.btnStatSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnStatSearch.BackColor = System.Drawing.Color.Firebrick;
             this.btnStatSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.btnStatSearch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);

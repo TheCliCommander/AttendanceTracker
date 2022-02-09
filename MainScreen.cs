@@ -42,6 +42,11 @@ namespace LearningApp1
             if (panelSearchSubMenu.Visible)
                 panelSearchSubMenu.Hide();
         }
+        private void hideSubMenu2()
+        {
+            if (panel2.Visible)
+                panel2.Hide();
+        }
 
         private void showSubMenu(Panel subMenu)
         {
@@ -86,6 +91,7 @@ namespace LearningApp1
         private void MainScreen_Load(object sender, EventArgs e)
         {
             hideSubMenu();
+            hideSubMenu2();
         }
 
         private void btnDateMS_Click(object sender, EventArgs e)
@@ -127,19 +133,91 @@ namespace LearningApp1
                     case "StatusSearch":
                         openChildForm(Activator.CreateInstance<StatusSearch>());
                         break;
+                    case "StatusDate":
+                        openChildForm(Activator.CreateInstance<StatusDate>());
+                        break;
+                    case "RemoveEntry":
+                        openChildForm(Activator.CreateInstance<RemoveEntryForm>());
+                        break;
+                    case "SDError":
+                        openChildForm(Activator.CreateInstance<StatusDate>());
+                        break;
+                    case "SSError":
+                        openChildForm(Activator.CreateInstance<StatusSearch>());
+                        break;
+                    case "NSError":
+                        openChildForm(Activator.CreateInstance<NameSearch>());
+                        break;
+                    case "DSError":
+                        openChildForm(Activator.CreateInstance<DateSearch>());
+                        break;
+                    case "Confirmation":
+                        openChildForm(Activator.CreateInstance<RecordAttendance>());
+                        break;
+                    case "REConfirm":
+                        openChildForm(Activator.CreateInstance<RemoveEntryForm>());
+                        break;
                 }
             }
         }
       
 
-        private void btnRemoveEntry_Click_1(object sender, EventArgs e)
-        {
-            openChildForm(new RemoveEntryForm());
-        }
+        
 
         private void btnMSDisplayAll_Click(object sender, EventArgs e)
         {
             openChildForm(new DisplayAll());
+        }
+
+
+        private void btnStatusDate_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new StatusDate());      
+        }
+
+        private void btnRemMenu_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panel2);
+        }
+
+        private void btnRemoveID_Click(object sender, EventArgs e)
+        {
+            
+            openChildForm(new RemoveID());
+        }
+
+        private void btnRemoveLast_Click(object sender, EventArgs e)
+        {
+            openChildForm(new RemoveLast());
+        }
+
+        private void btnRemoveAll_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn1 = new SqlConnection(@"Data Source=DESKTOP-OK1MJMB;Initial Catalog=Roster;Integrated Security=True");
+            DataTable dt1 = new DataTable();
+            string select1 = "DELETE FROM Employees WHERE 1=1;";
+            using (SqlDataAdapter da1 = new SqlDataAdapter(select1, conn1))
+            {
+                da1.Fill(dt1);
+            }
+            BindingSource bs1 = new BindingSource();
+            bs1.DataSource = dt1;
+            openChildForm(new RemoveAllConfirm());
+        }
+        
+        private void btnRemoveLast_Click_1(object sender, EventArgs e)
+        {
+            SqlConnection conn1 = new SqlConnection(@"Data Source=DESKTOP-OK1MJMB;Initial Catalog=Roster;Integrated Security=True");
+            DataTable dt1 = new DataTable();
+            string select1 = "DELETE FROM Employees WHERE ID = (SELECT max(ID) FROM Employees);";
+            using (SqlDataAdapter da1 = new SqlDataAdapter(select1, conn1))
+            {
+                da1.Fill(dt1);
+            }
+            BindingSource bs1 = new BindingSource();
+            bs1.DataSource = dt1;
+            openChildForm(new RemoveLast());
+            
         }
     }
 }

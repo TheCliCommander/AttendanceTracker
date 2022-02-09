@@ -1,6 +1,6 @@
 ﻿namespace LearningApp1
 {
-    partial class REConfirm
+    partial class RemoveIDError
     {
         /// <summary>
         /// Required designer variable.
@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblDateREC = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lblDateREC
+            // label1
             // 
-            this.lblDateREC.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblDateREC.AutoSize = true;
-            this.lblDateREC.ForeColor = System.Drawing.Color.Snow;
-            this.lblDateREC.Location = new System.Drawing.Point(161, 132);
-            this.lblDateREC.Name = "lblDateREC";
-            this.lblDateREC.Size = new System.Drawing.Size(381, 30);
-            this.lblDateREC.TabIndex = 0;
-            this.lblDateREC.Text = "MMM dd, yyyy FullName Entry Deleted.";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Firebrick;
+            this.label1.Location = new System.Drawing.Point(78, 132);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(560, 38);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ID does not exist, verify ID and try again!";
             // 
-            // REConfirm
+            // RemoveIDError
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(706, 334);
-            this.Controls.Add(this.lblDateREC);
-            this.Name = "REConfirm";
-            this.Text = "REConfirm";
-            this.Load += new System.EventHandler(this.REConfirm_Load);
+            this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.Color.Snow;
+            this.Name = "RemoveIDError";
+            this.Text = "RemoveIDError";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -59,6 +59,6 @@
 
         #endregion
 
-        private Label lblDateREC;
+        private Label label1;
     }
 }

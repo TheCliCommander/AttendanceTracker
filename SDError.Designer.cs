@@ -1,6 +1,6 @@
 ﻿namespace LearningApp1
 {
-    partial class REConfirm
+    partial class SDError
     {
         /// <summary>
         /// Required designer variable.
@@ -28,30 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblDateREC = new System.Windows.Forms.Label();
+            this.lblSDErrorMessage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lblDateREC
+            // lblSDErrorMessage
             // 
-            this.lblDateREC.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblDateREC.AutoSize = true;
-            this.lblDateREC.ForeColor = System.Drawing.Color.Snow;
-            this.lblDateREC.Location = new System.Drawing.Point(161, 132);
-            this.lblDateREC.Name = "lblDateREC";
-            this.lblDateREC.Size = new System.Drawing.Size(381, 30);
-            this.lblDateREC.TabIndex = 0;
-            this.lblDateREC.Text = "MMM dd, yyyy FullName Entry Deleted.";
+            this.lblSDErrorMessage.AutoSize = true;
+            this.lblSDErrorMessage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSDErrorMessage.ForeColor = System.Drawing.Color.Firebrick;
+            this.lblSDErrorMessage.Location = new System.Drawing.Point(65, 138);
+            this.lblSDErrorMessage.Name = "lblSDErrorMessage";
+            this.lblSDErrorMessage.Size = new System.Drawing.Size(564, 38);
+            this.lblSDErrorMessage.TabIndex = 0;
+            this.lblSDErrorMessage.Text = "No  entries for SDStatus on SDDate exists";
             // 
-            // REConfirm
+            // SDError
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(706, 334);
-            this.Controls.Add(this.lblDateREC);
-            this.Name = "REConfirm";
-            this.Text = "REConfirm";
-            this.Load += new System.EventHandler(this.REConfirm_Load);
+            this.Controls.Add(this.lblSDErrorMessage);
+            this.ForeColor = System.Drawing.Color.Snow;
+            this.Name = "SDError";
+            this.Text = "SDError";
+            this.Load += new System.EventHandler(this.SDError_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -59,6 +60,6 @@
 
         #endregion
 
-        private Label lblDateREC;
+        private Label lblSDErrorMessage;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace LearningApp1
 {
-    partial class REConfirm
+    partial class RemoveLast
     {
         /// <summary>
         /// Required designer variable.
@@ -28,30 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblDateREC = new System.Windows.Forms.Label();
+            this.lblRemoveLast = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lblDateREC
+            // lblRemoveLast
             // 
-            this.lblDateREC.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblDateREC.AutoSize = true;
-            this.lblDateREC.ForeColor = System.Drawing.Color.Snow;
-            this.lblDateREC.Location = new System.Drawing.Point(161, 132);
-            this.lblDateREC.Name = "lblDateREC";
-            this.lblDateREC.Size = new System.Drawing.Size(381, 30);
-            this.lblDateREC.TabIndex = 0;
-            this.lblDateREC.Text = "MMM dd, yyyy FullName Entry Deleted.";
+            this.lblRemoveLast.AutoSize = true;
+            this.lblRemoveLast.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lblRemoveLast.Location = new System.Drawing.Point(133, 132);
+            this.lblRemoveLast.Name = "lblRemoveLast";
+            this.lblRemoveLast.Size = new System.Drawing.Size(445, 38);
+            this.lblRemoveLast.TabIndex = 0;
+            this.lblRemoveLast.Text = "Last Entry Successfuly Removed!";
             // 
-            // REConfirm
+            // RemoveLast
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(706, 334);
-            this.Controls.Add(this.lblDateREC);
-            this.Name = "REConfirm";
-            this.Text = "REConfirm";
-            this.Load += new System.EventHandler(this.REConfirm_Load);
+            this.Controls.Add(this.lblRemoveLast);
+            this.ForeColor = System.Drawing.Color.Snow;
+            this.Name = "RemoveLast";
+            this.Text = "RemoveLast";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -59,6 +58,6 @@
 
         #endregion
 
-        private Label lblDateREC;
+        private Label lblRemoveLast;
     }
 }
